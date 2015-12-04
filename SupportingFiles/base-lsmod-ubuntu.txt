@@ -1,0 +1,56 @@
+Script started on Fri 04 Dec 2015 09:26:44 AM EST
+]0;kevin@kevin-VirtualBox: ~/Desktopkevin@kevin-VirtualBox:~/Desktop$ lsmod
+Module                  Size  Used by
+nls_utf8               16384  1 
+isofs                  40960  1 
+vboxsf                 45056  0 
+snd_intel8x0           40960  2 
+snd_ac97_codec        131072  1 snd_intel8x0
+ac97_bus               16384  1 snd_ac97_codec
+snd_pcm               106496  2 snd_ac97_codec,snd_intel8x0
+snd_seq_midi           16384  0 
+snd_seq_midi_event     16384  1 snd_seq_midi
+iosf_mbi               16384  0 
+snd_rawmidi            32768  1 snd_seq_midi
+snd_seq                65536  2 snd_seq_midi_event,snd_seq_midi
+crct10dif_pclmul       16384  0 
+crc32_pclmul           16384  0 
+ghash_clmulni_intel    16384  0 
+snd_seq_device         16384  3 snd_seq,snd_rawmidi,snd_seq_midi
+aesni_intel           172032  0 
+aes_x86_64             20480  1 aesni_intel
+lrw                    16384  1 aesni_intel
+gf128mul               16384  1 lrw
+snd_timer              32768  2 snd_pcm,snd_seq
+glue_helper            16384  1 aesni_intel
+ablk_helper            16384  1 aesni_intel
+joydev                 20480  0 
+cryptd                 20480  3 ghash_clmulni_intel,aesni_intel,ablk_helper
+snd                    86016  11 snd_ac97_codec,snd_intel8x0,snd_timer,snd_pcm,snd_seq,snd_rawmidi,snd_seq_device
+serio_raw              16384  0 
+i2c_piix4              24576  0 
+vboxvideo              16384  1 
+drm                   344064  3 vboxvideo
+soundcore              16384  1 snd
+vboxguest             249856  6 vboxsf
+8250_fintek            16384  0 
+video                  20480  0 
+mac_hid                16384  0 
+bnep                   20480  2 
+rfcomm                 69632  0 
+bluetooth             491520  10 bnep,rfcomm
+parport_pc             32768  0 
+binfmt_misc            20480  1 
+ppdev                  20480  0 
+lp                     20480  0 
+parport                45056  3 lp,ppdev,parport_pc
+hid_generic            16384  0 
+usbhid                 53248  0 
+hid                   110592  2 hid_generic,usbhid
+ahci                   36864  2 
+psmouse               114688  0 
+pata_acpi              16384  0 
+libahci                32768  1 ahci
+e1000                 135168  0 
+]0;kevin@kevin-VirtualBox: ~/Desktopkevin@kevin-VirtualBox:~/Desktop$ exit
+Script done on Fri 04 Dec 2015 09:26:50 AM EST
