@@ -1,0 +1,25 @@
+<filename> indicates the name of the file without an extension
+
+1. To build the kernel objec (.ko) file
+:
+$ make ARGS="<filename>"
+
+
+
+2. To install the compiled .ko file
+
+$ sudo insmod <filename>.ko
+
+
+
+3. To remove the installed .ko file
+
+$ sudo rmmod <filename>.ko
+
+
+
+4. To view the result
+
+$ tail /var/log/syslog
+
+
