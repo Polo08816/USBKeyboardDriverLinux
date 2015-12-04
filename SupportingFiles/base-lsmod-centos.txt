@@ -1,0 +1,98 @@
+Script started on Fri 04 Dec 2015 09:21:22 AM EST
+]0;user@localhost:~/Desktop]7;file://localhost.localdomain/home/user/Desktop[?1034h[user@localhost Desktop]$ lsmod
+Module                  Size  Used by
+nls_utf8               12557  1 
+isofs                  39844  1 
+bnep                   19704  2 
+bluetooth             372662  7 bnep
+rfkill                 26536  3 bluetooth
+fuse                   87741  3 
+xt_CHECKSUM            12549  1 
+ipt_MASQUERADE         12678  3 
+nf_nat_masquerade_ipv4    13412  1 ipt_MASQUERADE
+tun                    27183  1 
+ip6t_rpfilter          12546  1 
+ip6t_REJECT            12939  2 
+ipt_REJECT             12541  4 
+xt_conntrack           12760  8 
+ebtable_nat            12807  0 
+ebtable_broute         12731  0 
+bridge                115385  1 ebtable_broute
+stp                    12976  1 bridge
+llc                    14552  2 stp,bridge
+ebtable_filter         12827  0 
+ebtables               30913  3 ebtable_broute,ebtable_nat,ebtable_filter
+ip6table_nat           12864  1 
+nf_conntrack_ipv6      18738  5 
+nf_defrag_ipv6         34651  1 nf_conntrack_ipv6
+nf_nat_ipv6            14131  1 ip6table_nat
+ip6table_mangle        12700  1 
+ip6table_security      12710  1 
+ip6table_raw           12683  1 
+ip6table_filter        12815  1 
+ip6_tables             27025  5 ip6table_filter,ip6table_mangle,ip6table_security,ip6table_nat,ip6table_raw
+iptable_nat            12875  1 
+nf_conntrack_ipv4      14862  5 
+nf_defrag_ipv4         12729  1 nf_conntrack_ipv4
+nf_nat_ipv4            14115  1 iptable_nat
+nf_nat                 26146  3 nf_nat_ipv4,nf_nat_ipv6,nf_nat_masquerade_ipv4
+nf_conntrack          105702  7 nf_nat,nf_nat_ipv4,nf_nat_ipv6,xt_conntrack,nf_nat_masquerade_ipv4,nf_conntrack_ipv4,nf_conntrack_ipv6
+iptable_mangle         12695  1 
+iptable_security       12705  1 
+iptable_raw            12678  1 
+iptable_filter         12810  1 
+ip_tables              27239  5 iptable_security,iptable_filter,iptable_mangle,iptable_nat,iptable_raw
+vboxsf                 39741  0 
+crct10dif_pclmul       14289  0 
+crc32_pclmul           13113  0 
+crc32c_intel           22079  0 
+snd_intel8x0           38274  3 
+ghash_clmulni_intel    13259  0 
+aesni_intel            69884  0 
+snd_ac97_codec        130476  1 snd_intel8x0
+ac97_bus               12730  1 snd_ac97_codec
+lrw                    13286  1 aesni_intel
+gf128mul               14951  1 lrw
+glue_helper            13990  1 aesni_intel
+ablk_helper            13597  1 aesni_intel
+cryptd                 20359  3 ghash_clmulni_intel,aesni_intel,ablk_helper
+ppdev                  17671  0 
+vboxvideo              12658  1 
+snd_seq                63074  0 
+snd_seq_device         14497  1 snd_seq
+serio_raw              13462  0 
+drm                   311588  3 vboxvideo
+video                  19263  0 
+i2c_piix4              22106  0 
+parport_pc             28165  0 
+parport                42348  2 ppdev,parport_pc
+snd_pcm               103996  2 snd_ac97_codec,snd_intel8x0
+snd_timer              29562  2 snd_pcm,snd_seq
+snd                    75127  12 snd_ac97_codec,snd_intel8x0,snd_timer,snd_pcm,snd_seq,snd_seq_device
+soundcore              15047  1 snd
+vboxguest             297171  8 vboxsf
+i2c_core               40325  2 drm,i2c_piix4
+pcspkr                 12718  0 
+uinput                 17625  0 
+xfs                   914983  3 
+libcrc32c              12644  1 xfs
+sr_mod                 22416  1 
+sd_mod                 45548  3 
+cdrom                  42556  1 sr_mod
+ata_generic            12910  0 
+crc_t10dif             12714  1 sd_mod
+crct10dif_common       12595  2 crct10dif_pclmul,crc_t10dif
+pata_acpi              13038  0 
+ahci                   29870  2 
+libahci                32009  1 ahci
+ata_piix               35038  1 
+e1000                 149270  0 
+libata                218854  5 ahci,pata_acpi,libahci,ata_generic,ata_piix
+dm_mirror              22135  0 
+dm_region_hash         20862  1 dm_mirror
+dm_log                 18411  2 dm_region_hash,dm_mirror
+dm_mod                104038  11 dm_log,dm_mirror
+]0;user@localhost:~/Desktop]7;file://localhost.localdomain/home/user/Desktop[user@localhost Desktop]$ exit
+exit
+
+Script done on Fri 04 Dec 2015 09:21:26 AM EST
