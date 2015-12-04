@@ -1,0 +1,6 @@
+Script started on Fri 04 Dec 2015 09:36:20 AM EST
+]0;kevin@kevin-VirtualBox: ~/Desktopkevin@kevin-VirtualBox:~/Desktop$ lsusb
+Bus 001 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+]0;kevin@kevin-VirtualBox: ~/Desktopkevin@kevin-VirtualBox:~/Desktop$ s[Kexit
+Script done on Fri 04 Dec 2015 09:36:26 AM EST
