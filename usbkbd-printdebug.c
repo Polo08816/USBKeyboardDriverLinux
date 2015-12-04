@@ -46,7 +46,7 @@ MODULE_DESCRIPTION(DRIVER_DESC);
 MODULE_LICENSE(DRIVER_LICENSE);
 
 static const unsigned char usb_kbd_keycode[256] = {
-	  0,  0,  0,  0, 30, 48, 46, 32, 18, 33, 34, 35, 23, 36, 37, 38,
+	  0,  0,  0,  0, 0, 48, 46, 32, 18, 33, 34, 35, 23, 36, 37, 38,
 	 50, 49, 24, 25, 16, 19, 31, 20, 22, 47, 17, 45, 21, 44,  2,  3,
 	  4,  5,  6,  7,  8,  9, 10, 11, 28,  1, 14, 15, 57, 12, 13, 26,
 	 27, 43, 43, 39, 40, 41, 51, 52, 53, 58, 59, 60, 61, 62, 63, 64,
@@ -166,6 +166,7 @@ resubmit:
 static int usb_kbd_event(struct input_dev *dev, unsigned int type,
 			 unsigned int code, int value)
 {
+	printk(KERN_INFO "usbkbd event");
 	unsigned long flags;
 	struct usb_kbd *kbd = input_get_drvdata(dev);
 
@@ -230,6 +231,7 @@ static void usb_kbd_led(struct urb *urb)
 
 static int usb_kbd_open(struct input_dev *dev)
 {
+	printk(KERN_INFO "usbkbd open");
 	struct usb_kbd *kbd = input_get_drvdata(dev);
 
 	kbd->irq->dev = kbd->usbdev;
@@ -241,6 +243,7 @@ static int usb_kbd_open(struct input_dev *dev)
 
 static void usb_kbd_close(struct input_dev *dev)
 {
+	printk(KERN_INFO "usbkbd close");
 	struct usb_kbd *kbd = input_get_drvdata(dev);
 
 	usb_kill_urb(kbd->irq);
@@ -274,6 +277,7 @@ static void usb_kbd_free_mem(struct usb_device *dev, struct usb_kbd *kbd)
 static int usb_kbd_probe(struct usb_interface *iface,
 			 const struct usb_device_id *id)
 {
+	printk(KERN_INFO "usbkbd probe");
 	struct usb_device *dev = interface_to_usbdev(iface);
 	struct usb_host_interface *interface;
 	struct usb_endpoint_descriptor *endpoint;
@@ -381,6 +385,7 @@ fail1:
 
 static void usb_kbd_disconnect(struct usb_interface *intf)
 {
+	printk(KERN_INFO "usbkbd disconnect");
 	struct usb_kbd *kbd = usb_get_intfdata (intf);
 
 	usb_set_intfdata(intf, NULL);
