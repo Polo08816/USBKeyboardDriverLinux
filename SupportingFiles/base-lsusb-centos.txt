@@ -1,0 +1,7 @@
+Script started on Fri 04 Dec 2015 09:37:13 AM EST
+]0;user@localhost:~/Desktop]7;file://localhost.localdomain/home/user/Desktop[?1034h[user@localhost Desktop]$ lsusb
+Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+]0;user@localhost:~/Desktop]7;file://localhost.localdomain/home/user/Desktop[user@localhost Desktop]$ exit
+exit
+
+Script done on Fri 04 Dec 2015 09:37:18 AM EST
