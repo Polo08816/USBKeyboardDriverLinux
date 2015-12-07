@@ -1,0 +1,8 @@
+Script started on Sun 06 Dec 2015 07:05:51 PM EST
+]0;user@localhost:~/Desktop]7;file://localhost.localdomain/home/user/Desktop[user@localhost Desktop]$ lsusb
+Bus 001 Device 002: ID 03f0:0024 Hewlett-Packard KU-0316 Keyboard
+Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+]0;user@localhost:~/Desktop]7;file://localhost.localdomain/home/user/Desktop[user@localhost Desktop]$ exit
+exit
+
+Script done on Sun 06 Dec 2015 07:06:11 PM EST
