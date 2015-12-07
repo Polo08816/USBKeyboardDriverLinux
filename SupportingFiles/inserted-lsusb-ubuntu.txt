@@ -1,0 +1,7 @@
+Script started on Sun 06 Dec 2015 07:03:33 PM EST
+]0;user@user-VirtualBox: ~user@user-VirtualBox:~$ lsusb
+Bus 001 Device 003: ID 03f0:0024 Hewlett-Packard KU-0316 Keyboard
+Bus 001 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+]0;user@user-VirtualBox: ~user@user-VirtualBox:~$ exit
+Script done on Sun 06 Dec 2015 07:03:39 PM EST
