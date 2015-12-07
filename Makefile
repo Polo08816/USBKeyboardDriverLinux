@@ -1,6 +1,9 @@
-obj-m += usbkbd.o
+DIRS	= usbkbd-printdebug usbkbd-scancodemod usbkdb
 
-all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
-clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+all : $(DIRS)
+	cd usbkbd-printdebug; $(MAKE) $(MFLAGS)
+	cd usbkbd-scancodemod; $(MAKE) $(MFLAGS)
+	cd usbkdb; $(MAKE) $(MFLAGS)
+
+clean :
+	-for d in $(DIRS); do (cd $$d; $(MAKE) clean ); done
